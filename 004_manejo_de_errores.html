@@ -5,18 +5,36 @@
 		<title>Codigo Facilito - JQuery</title>
 	</head>
 	<body>
-		<h1>prueba</h1>
+		<h1>prueba manejo de erores</h1>
 		<!-- Importacion de libreria Jquery -->
-		<script src="js/jquery-3.2.0.min.js"></script>
+		<script src="js/jquery-3.1.0.min.js"></script>
 		<script>
 			//manejo de errores
-			$.when( $.ready, $.getScript("js/libreria.js") ).then(function(){
+			/* Forma 1 */
+			$.when( $.ready, $.getScript("js/libreria.js") ).then(function() {
 				// el documento optional.js esta cargado y listo
-				console.log("libreria.js cargado");
-			}).catch( function(){
+				console.log("recurso libreria.js cargado");
+				$('h1').text("recurso libreria.js cargado");
+			}).catch( function() {
 				// hubo algun inconveniente al intentar cargar el documento optional.js
-				console.log("problemas con libreria.js");
+				console.log("problemas con recurso libreria.js");
+				$('h1').text("problemas con recurso libreria.js");
 			});
+			/* fin Forma 1 */
+			/* /////////////////////////////////////////////////////////////// */
+			/* OTRA FORMA */
+			/*
+			$.ready, $.getScript("js/libreria.js") 
+				.done (function(){
+					// el documento optional.js esta cargado y listo
+					console.log("libreria.js cargado");	
+				})
+				.fail (function(){
+					// hubo algun inconveniente al intentar cargar el documento optional.js
+					console.log("problemas con libreria.js");
+				});
+			*/
+			/* FIN OTRA FORMA */
 		</script>
 	</body>
 </html>

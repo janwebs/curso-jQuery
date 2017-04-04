@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Codigo Facilito - JQuery - show y hide</title>
+	</head>
+	<body>
+		<div class="saludo">Manejo de show y hide</div>
+		<!-- Importacion de libreria Jquery -->
+		<script src="js/jquery-3.2.0.min.js"></script>
+		<script>
+			// Metodos CSS
+			$(function(){
+				$('.saludo').css({'background-color':'red','text-align':'center'});
+				// asi se muestra
+				$('.saludo').show(3000);
+				// asi se oculta
+				$('.saludo').hide(10000);
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Codigo Facilito - JQuery - manejo de clases</title>
+	</head>
+	<body>
+		<div id="parrafo" class="saludo">Manejo de clases</div>
+		<!-- Importacion de libreria Jquery -->
+		<script src="js/jquery-3.2.0.min.js"></script>
+		<script>
+			// Metodos CSS
+			$(function(){
+				if ($('#parrafo').hasClass('saludos')){
+					$('#parrafo').text('el div tiene clase "saludo"');
+					// asi se remueve una clase
+					$('#parrafo').removeClass('saludo');
+				}else{
+					$('#parrafo').text('el div no tiene clase "saludo"');
+					$('#parrafo').removeClass('saludo');
+					// asi se agrega una clase
+					$('#parrafo').addClass('hola');
+				}
+			});
+
+
+		</script>
+	</body>
+</html>

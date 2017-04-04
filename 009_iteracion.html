@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Codigo Facilito - JQuery - iteracion</title>
+	</head>
+	<body>
+		<div class="saludo">Manejo de iteracion</div>
+		<!-- Importacion de libreria Jquery -->
+		<script src="js/jquery-3.2.0.min.js"></script>
+		<script>
+			// Metodos CSS
+			$(function(){
+				var numbers=[547,335,8788,4712];
+				// iteracion usando each
+				/*
+				$.each(numbers,function(i, value){
+					console.log(i+":"+value);
+				});
+				*/
+				// iteracion usando for
+				/*
+				for(var i=0; i<numbers.length; i++){
+					console.log(i+":"+numbers[i]);
+				}
+				*/
+				// iteracion usando while
+				/*
+				j=0;
+				while(j<numbers.length){
+					console.log(j+":"+numbers[j]);
+					j++;	
+				}
+				*/
+			});
+		</script>
+	</body>
+</html>
