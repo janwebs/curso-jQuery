@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+                <title>Codigo Facilito - JQuery</title>
+        </head>
+        <body>
+            <h1 class="selector_class">prueba selector class con estilo</h1>
+            <p id="selector_id"></p>
+            <div></div>
+            <!-- Importacion de libreria Jquery -->
+            <script src="js/jquery-3.2.0.min.js"></script>
+            <script>
+                $(document).ready(function(){
+                    // selector a class
+                    $('.selector_class').css({'color':'blue'});
+                    // selector a id
+                    $('#selector_id').text("prueba selector id");
+                    // selector a div
+                    $('div').text("prueba selector div");
+                });
+            </script>
+        </body>
+    </html>

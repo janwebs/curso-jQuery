@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Codigo Facilito - JQuery</title>
+	</head>
+	<body>
+		<h1>prueba</h1>
+		<!-- Importacion de libreria Jquery -->
+		<script src="js/jquery-3.2.0.min.js"></script>
+		<script>
+			// primera forma de metodo ready RECOMENDADA
+			$(function(){
+				alert("primera forma metodo ready");
+			});
+			
+			// segunda forma de metodo ready
+			/*
+			$().ready(function(){
+				alert("segunda forma metodo ready");
+			});
+			*/
+			// tercera forma de metodo ready
+			/*
+			$(document).ready(function(){
+				alert("segunda forma metodo ready");
+			});
+			*/
+			// cuarta forma de metodo ready
+			/*
+			$('h1').ready(function(){
+				alert("cuarta forma metodo ready");
+			});
+			*/	
+		</script>
+	</body>
+</html>

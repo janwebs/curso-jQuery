@@ -1,0 +1,1 @@
+alert("libreria.js se cargo y esta listo");

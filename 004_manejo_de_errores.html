@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Codigo Facilito - JQuery</title>
+	</head>
+	<body>
+		<h1>prueba</h1>
+		<!-- Importacion de libreria Jquery -->
+		<script src="js/jquery-3.2.0.min.js"></script>
+		<script>
+			//manejo de errores
+			$.when( $.ready, $.getScript("js/libreria.js") ).then(function(){
+				// el documento optional.js esta cargado y listo
+				console.log("libreria.js cargado");
+			}).catch( function(){
+				// hubo algun inconveniente al intentar cargar el documento optional.js
+				console.log("problemas con libreria.js");
+			});
+		</script>
+	</body>
+</html>
